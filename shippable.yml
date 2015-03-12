@@ -4,8 +4,6 @@ php:
   - 5.4
 env:
   - NODE_ENV="test",TZ="Australia/Sydney",MONGO_URl="mongodb://127.0.0.1:27017/cammy",CAMMY_ENV="develop",DB_HOST="127.0.0.1",DB_NAME="cammy",DB_PASSWORD="",DB_USER="shippable"
-seriv
-
 before_install:
   - mysql -e 'CREATE DATABASE cammy;'
   - mysql cammy < ./sql/db.sql
