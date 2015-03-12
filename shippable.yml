@@ -14,7 +14,7 @@ env:
     - DB_USER="shippable"
 before_install:
   - mysql -e 'CREATE DATABASE cammy;'
-  - mysql cammy < ./sql/db.sql
+  #- mysql cammy < ./sql/db.sql
   - sudo apt-get update
   - sudo apt-get install -y apache2
   - sudo apt-get install -y php5-mysql
