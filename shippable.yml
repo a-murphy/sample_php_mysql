@@ -15,3 +15,5 @@ script:
   - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage test.php
 
 cache: true
+
+commit_container: amurphy/test
