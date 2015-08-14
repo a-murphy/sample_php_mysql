@@ -12,7 +12,6 @@
          forceCoversAnnotation="false"
          mapTestClassNameToCoveredClassName="false"
          printerClass="PHPUnit_TextUI_ResultPrinter"
-         <!--printerFile="/path/to/ResultPrinter.php"-->
          processIsolation="false"
          stopOnError="false"
          stopOnFailure="false"
@@ -20,10 +19,8 @@
          stopOnSkipped="false"
          stopOnRisky="false"
          testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
-         <!--testSuiteLoaderFile="/path/to/StandardTestSuiteLoader.php"-->
          timeoutForSmallTests="1"
          timeoutForMediumTests="10"
          timeoutForLargeTests="60"
          verbose="false">
-  <!-- ... -->
 </phpunit>
