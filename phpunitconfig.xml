@@ -22,4 +22,9 @@
          timeoutForMediumTests="10"
          timeoutForLargeTests="60"
          verbose="false">
+         <logging>
+                  <log type="coverage-php" target="shippable/codecoverage"/>
+                  <log type="coverage-xml" target="shippable/codecoverage"/>
+                  <log type="junit" target="shippable/testresults/junit.xml" logIncompleteSkipped="false"/>
+         </logging>
 </phpunit>
