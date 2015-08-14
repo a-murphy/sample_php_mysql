@@ -1,4 +1,4 @@
-language: none
+language: php
 
 php: 
   - 5.4
@@ -12,7 +12,7 @@ before_script:
   - ls
 
 script:
-  - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage test.php
+  - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage -c phpunitconfig.xml test.php
 
 cache: true
 
