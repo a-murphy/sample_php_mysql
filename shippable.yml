@@ -12,7 +12,7 @@ before_script:
   - ls
 
 script:
-  - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage -c phpunitconfig.xml test.php
+  - phpunit -c phpunitconfig.xml
 
 cache: true
 
