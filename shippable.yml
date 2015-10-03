@@ -19,7 +19,11 @@ cache: true
 archive: true
 
 notifications:
-  email: false
-  irc: localhost#test
+  email:
+   on_success: true
+   on_failure: 'never'
+  irc:
+   - localhost#test1
+   - localhost#test2
 
 commit_container: amurphy/test
