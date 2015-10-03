@@ -20,10 +20,12 @@ archive: true
 
 notifications:
   email:
-   on_success: true
-   on_failure: 'never'
+   on_success: 'always'
+   recipients: aidan@shippable.com
   irc:
-   - localhost#test1
-   - localhost#test2
+   pull_requests: true
+   channels:
+     - localhost#test1
+     - localhost#test2
 
 commit_container: amurphy/test
