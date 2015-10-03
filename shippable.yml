@@ -16,5 +16,10 @@ script:
   - echo $?
 
 cache: true
+archive: true
+
+notifications:
+  email: false
+  irc: localhost#test
 
 commit_container: amurphy/test
