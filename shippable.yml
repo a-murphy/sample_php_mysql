@@ -19,13 +19,7 @@ cache: true
 archive: true
 
 notifications:
-  email:
-   on_success: 'always'
-   recipients: aidan@shippable.com
-  irc:
-   pull_requests: true
-   channels:
-     - localhost#test1
-     - localhost#test2
+  email: aidan@shippable.com
+
 
 commit_container: amurphy/test
